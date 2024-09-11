@@ -8,7 +8,7 @@ import Products from "./Products";
 
 
 
-const HomePage = ()=>{
+const HomePage = ({navigation})=>{
     return(
         <>
         <ScrollView style={styles.section1}>
@@ -25,7 +25,7 @@ const HomePage = ()=>{
             </View>
 
             <View style={styles.section2}>
-                <Products/>
+                <Products navigation={navigation}/>
             </View>
 
         </ScrollView>
